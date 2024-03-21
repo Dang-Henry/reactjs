@@ -1,0 +1,33 @@
+{
+  "name": "polaris-react-hook-form",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@shopify/polaris": "4.5.0",
+    "@shopify/polaris-icons": "^8.8.0",
+    "lodash": "^4.17.21",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
+    "react-hook-form": "5.7.2",
+    "react-scripts": "^5.0.1",
+    "yup": "0.29.0"
+  },
+  "devDependencies": {
+    "@types/yup": "^0.32.0",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

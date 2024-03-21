@@ -1,0 +1,28 @@
+:root {
+  --p-space-0: 0px;
+}
+
+body {
+  margin: 50px;
+}
+
+.Polaris-Icon {
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.Polaris-Button__Text, .flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Polaris-Button {
+  background-color: #EF4A33;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
