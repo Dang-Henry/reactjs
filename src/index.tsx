@@ -14,8 +14,7 @@ function App() {
   });
   return (
     <AppProvider i18n={translations}>
-      <Page title="Hello CodeSandbox">
-        <div>Start editing to see some magic happen!</div>
+      <Page>
         <FormLayout>
           <ConnectTextField name={"TextField"} label="Polaris input" />
         </FormLayout>

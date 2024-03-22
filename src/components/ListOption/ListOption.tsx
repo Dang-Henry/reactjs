@@ -28,6 +28,8 @@ const ListOption: React.FC<Props> = ({ data, index, updateData, removeOption }) 
 
   useEffect(() => {
     setSelected(data.type)
+
+    reset(data)
   }, [data])
 
   const handleSelectChange = useCallback(
@@ -60,7 +62,7 @@ const ListOption: React.FC<Props> = ({ data, index, updateData, removeOption }) 
     amount: ""
   };
 
-  const { register, handleSubmit, errors, control, formState } = useForm({
+  const { register, handleSubmit, errors, control, reset } = useForm({
     defaultValues: data || defaultValues,
     validationSchema: SignupSchema,
     mode: 'onChange',

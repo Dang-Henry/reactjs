@@ -7,7 +7,7 @@ import DataTableRule from "../../DataTable";
 import { PlusCircleIcon } from '@shopify/polaris-icons';
 import { defaultValues, initData } from "../../../constants";
 
-
+import axios from 'axios';
 import _ from 'lodash';
 
 export interface Props {
@@ -62,6 +62,16 @@ const WrappedTextFiled: React.FC<Props> = ({ label, name }) => {
 
   const handleSave = (event: any) => {
     console.log(event);
+
+    axios.get('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => {
+        console.log(response.data);
+        alert('Save successfully');
+      })
+      .catch(error => {
+        console.error('Error fetching data: ', error);
+        alert('Save failed');
+      });
   };
 
   const addOption = () => {

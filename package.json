@@ -7,6 +7,7 @@
   "dependencies": {
     "@shopify/polaris": "4.5.0",
     "@shopify/polaris-icons": "^8.8.0",
+    "axios": "^1.6.8",
     "lodash": "^4.17.21",
     "react": "16.10.2",
     "react-dom": "16.10.2",
@@ -29,5 +30,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "proxy": "http://api.example.com"
 }
